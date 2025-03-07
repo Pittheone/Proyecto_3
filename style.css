@@ -1,0 +1,502 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(90deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
+}
+
+.headthingy {
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  color:#fff;
+  text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+}
+
+.logo {
+  width:30px;
+  height:30px;
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.topnav a {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-bottom: 3px solid transparent; 
+  transition: color 0.3s, transform 0.3s, border-color 0.3s;
+}
+
+.topnav a:hover {
+  color: #40E0D0;
+  transform: scale(1.1);
+  border-bottom: 3px solid white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.first-container {
+  margin-top: 40px;
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 40px;
+}
+
+.text-container {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.mail-container {
+  margin-top: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  row-gap: 5px;
+}
+
+.write-here {
+  font-size: 20px;
+  padding: 10px;
+  padding-inline: 8px;
+  padding-block: 8px;
+  margin-right: 10px;
+  border-radius: 25px;
+  width: 50%;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8); 
+  box-shadow: 1px 1px 10px #ffffff98, 1px 1px 10px #ccc;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  outline: none !important;
+}
+
+.write-here:hover,
+.write-here::placeholder{
+  color: black; 
+  border: none; 
+}
+.write-here:focus {
+  color: black;
+  border: none;
+
+}
+
+.enter{
+  font-size: 20px;
+  padding: 10px;
+  padding-inline: 8px;
+  padding-block: 8px;
+  border-radius: 25px;
+  width: 50%;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8); 
+  box-shadow: 1px 1px 10px #ffffff98, 1px 1px 10px #ccc;
+  position: relative;
+  overflow: hidden;
+  font-size: 20px;
+  color: black; 
+}
+
+.enter::before {
+  content: "Contat us";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.enter:hover::before {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.enter::after {
+  content: "Nice!";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: black;
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 0;
+}
+
+.enter:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.dragon1 {
+  display: flex;
+  align-self: flex-end;
+  width: 600px;   /* Ajusta el tamaño según necesidad */
+  height: auto;   /* Mantiene la proporción */
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.intersection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 150px;
+  font-size: 100px;
+  color: #fff;
+  text-align: center;
+  text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+  text-align:center;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: linear-gradient(to right, #624690, #9e4583, #c55670, #b96c51, #b99045, #baba54);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.dg {
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+}
+
+.tittle-dragon {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 300px;
+  height: 50px;
+  box-shadow: 1px 1px 10px #ffffff98, 1px 1px 10px #ccc;
+  border-radius: 25px;
+  background-color:  rgba(255, 255, 255, 0.8);
+  opacity: 70%;
+  opacity: 1;
+  margin-top: 20px;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 60px auto 0;
+  margin-bottom: 80px; 
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 400px;               
+  overflow: hidden;
+  border-radius: 0.5rem;       
+  background-color: #f3f3f3;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);   
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;             
+  transition: opacity 0.7s ease-in-out;
+  opacity: 0;
+}
+
+.carousel-item.active {
+  display: block;
+  opacity: 1;
+  z-index: 1;
+}
+
+.carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px; 
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ccc;  
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-indicators button:hover {
+  background-color: #999;
+}
+
+
+.carousel-indicators button.active {
+  background-color: #666;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  width: 50px;        
+  height: 100%;
+  background: none;  
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #fffbfb;
+  z-index: 2;
+  transition: color 0.3s;
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+.carousel-control-next {
+  right: 0;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  color: #8b8b8b;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 40px;
+  margin-top: 15px;
+  width: 300px;
+  height: 50px;
+  box-shadow: 1px 1px 10px #ffffff98, 1px 1px 10px #ccc;
+  border-radius: 25px;
+  background-color:  rgba(255, 255, 255, 0.8);
+}
+
+.buy {
+  margin-top: 10px; 
+}
+
+.buy button {
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8); 
+  box-shadow: 1px 1px 10px #ffffff98, 1px 1px 10px #ccc;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 20px;
+  color: transparent; 
+}
+
+.buy button::before {
+  content: "Buy one";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.buy button:hover::before {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.buy button::after {
+  content: "Nice!";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: black;
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 0;
+}
+
+.buy button:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.almost-end{
+  margin-top: 100px !important;
+  display: flex;
+  flex-direction: row !important;
+
+}
+
+.dramatic{
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 40px;
+  padding-bottom: 8px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.final-tittle {
+  font-size: 30px;
+  margin-left: 40px;
+  font-size: 50px;
+  text-shadow:1px 1px 10px #ffffff98, 1px 1px 10px #ccc;
+  color: white 
+}
+.description-contact {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 18px;
+  line-height: 2;
+  margin-left: 40px;
+  margin-right: 20px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.description-contact {
+text-align: center;
+margin: 20px;
+margin-left: 40px;
+margin-right: 100px;
+}
+
+.contact {
+  font-size: 20px;
+  margin-left: 300px;
+  border-radius: 25px;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8); 
+  
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 20px;
+  color: black;
+
+}
+.contact{
+  width: 200px;
+  height: 50px;
+  margin-left: 530px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8); 
+  box-shadow: 1px 1px 10px #ffffff98, 1px 1px 10px #ccc;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 20px;
+  color: black; 
+}
+
+.contact::before {
+  content: "Contat us";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.contact:hover::before {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.contact::after {
+  content: "Nice!";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: black;
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 0;
+}
+
+.contact:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+footer {
+  padding: 20px;
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
