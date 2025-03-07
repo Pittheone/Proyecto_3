@@ -88,14 +88,14 @@ body {
   cursor: pointer;
   overflow: hidden;
   font-size: 20px;
-  color: black;
+  color: rgb(135, 135, 135);
   text-align: center;
   outline: none !important;
 }
 
 .write-here:hover,
 .write-here::placeholder{
-  color: black; 
+  color: rgb(146, 146, 146); 
   border: none; 
 }
 .write-here:focus {
@@ -110,7 +110,7 @@ body {
   padding-inline: 8px;
   padding-block: 8px;
   border-radius: 25px;
-  width: 50%;
+  width: 38%;
   height: 40px;
   border-radius: 25px;
   border: none;
@@ -123,7 +123,7 @@ body {
 }
 
 .enter::before {
-  content: "Contat us";
+  content: "Contact us";
   position: absolute;
   top: 50%;
   left: 50%;
