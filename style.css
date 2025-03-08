@@ -11,10 +11,9 @@ body {
 }
 
 .headthingy {
-  top: 0;
-  left: 0;
   width: 100%;
-
+  padding-left: 115px;
+  font-size: xx-large;
   display: flex;
   justify-content: flex-start; 
   align-items: center;
@@ -23,8 +22,8 @@ body {
 }
 
 .logo {
-  width:30px;
-  height:30px;
+  width:40px;
+  height:40px;
 }
 
 .topnav {
@@ -34,7 +33,7 @@ body {
 }
 
 .topnav a {
-  font-size: 18px;
+  font-size: 28px;
   color: white;
   font-weight: 500;
   text-decoration: none;
@@ -53,14 +52,18 @@ body {
 .first-container {
   margin-top: 40px;
   margin-bottom: 90px;
+  margin-left: 90px;
   display: flex;
   justify-content: space-between; 
   align-items: center; 
   padding: 40px;
+  padding-right: 5px;
+  padding-top: 100px;
 }
 
 .text-container {
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  font-size: 50px;
 }
 
 .mail-container {
@@ -106,7 +109,6 @@ body {
 
 .enter{
   font-size: 20px;
-  padding: 10px;
   padding-inline: 8px;
   padding-block: 8px;
   border-radius: 25px;
@@ -120,6 +122,7 @@ body {
   overflow: hidden;
   font-size: 20px;
   color: black; 
+  width: 200px;
 }
 
 .enter::before {
@@ -156,23 +159,27 @@ body {
 .dragon1 {
   display: flex;
   align-self: flex-end;
-  width: 600px;   /* Ajusta el tamaño según necesidad */
-  height: auto;   /* Mantiene la proporción */
+  width: 900px;  
+  height: auto;  
   border-radius: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.dragon1 {
+  margin-right: 100px !important;
 }
 
 .intersection {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 150px;
-  font-size: 100px;
+  margin-bottom: 100px;
+  font-size: 300px;
   color: #fff;
   text-align: center;
   text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
   text-align:center;
+  padding-top: 20px;
 }
 
 .products-container {
@@ -182,6 +189,10 @@ body {
   background: linear-gradient(to right, #624690, #9e4583, #c55670, #b96c51, #b99045, #baba54);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 5px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .product{
@@ -189,15 +200,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
-  margin-top: 30px;
 }
 
 .dg {
-  width: 300px;
-  height: 300px;
+  width: 430px;
+  height: 430px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .tittle-dragon {
@@ -205,19 +216,21 @@ body {
   align-items: center;
   text-align: center;
   justify-content: center;
-  width: 300px;
-  height: 50px;
-  box-shadow: 1px 1px 10px #ffffff98, 1px 1px 10px #ccc;
+  width: 350px;
+  height: 67px;
   border-radius: 25px;
+  box-shadow: 1px 1px 10px #ffffff98, 1px 1px 10px #ccc;
   background-color:  rgba(255, 255, 255, 0.8);
   opacity: 70%;
   opacity: 1;
   margin-top: 20px;
+  font-size: 18px;
 }
 
 .carousel {
   position: relative;
   width: 100%;
+  height: 800px;
   max-width: 800px;
   margin: 60px auto 0;
   margin-bottom: 80px; 
@@ -225,8 +238,8 @@ body {
 
 .carousel-inner {
   position: relative;
-  width: 100%;
-  height: 400px;               
+  width: 800px;
+  height: 800px;               
   overflow: hidden;
   border-radius: 0.5rem;       
   background-color: #f3f3f3;
@@ -400,20 +413,21 @@ body {
   font-style: italic;
   margin-left: 40px;
   padding-bottom: 8px;
+  font-size: xx-large;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .final-tittle {
   font-size: 30px;
   margin-left: 40px;
-  font-size: 50px;
+  font-size: 80px;
   text-shadow:1px 1px 10px #ffffff98, 1px 1px 10px #ccc;
   color: white 
 }
 .description-contact {
   margin-top: 20px;
   margin-bottom: 50px;
-  font-size: 18px;
+  font-size: 28px;
   line-height: 2;
   margin-left: 40px;
   margin-right: 20px;
@@ -427,41 +441,24 @@ margin-left: 40px;
 margin-right: 100px;
 }
 
-.contact {
-  font-size: 20px;
-  margin-left: 300px;
-  border-radius: 25px;
-  width: 200px;
-  height: 50px;
-  border-radius: 25px;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.8); 
-  
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  font-size: 20px;
-  color: black;
-
-}
 .contact{
-  width: 200px;
-  height: 50px;
-  margin-left: 530px;
+  width: 300px;
+  height: 80px;
   margin-bottom: 10px;
-  border-radius: 25px;
+  border-radius: 40px;
+  font-size: 35px;
   border: none;
   background-color: rgba(255, 255, 255, 0.8); 
   box-shadow: 1px 1px 10px #ffffff98, 1px 1px 10px #ccc;
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  font-size: 20px;
   color: black; 
+  margin-left: 780px;
 }
 
 .contact::before {
-  content: "Contat us";
+  content: "Contact";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -481,7 +478,6 @@ margin-right: 100px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  color: black;
   transition: opacity 0.5s, transform 0.5s;
   opacity: 0;
 }
@@ -493,7 +489,7 @@ margin-right: 100px;
 
 footer {
   padding: 20px;
-  margin-top: 50px;
+  margin-top: 90px;
   text-align: center;
   display: flex;
   flex-flow: row;
